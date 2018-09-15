@@ -1,0 +1,36 @@
+#include<iostream.h>
+#include<conio.h>
+#include<fstream.h>
+#include<string.h>
+struct x
+{
+char w[30];
+int x;
+};
+class A
+{
+char [10];
+public:
+void write();
+{
+struct x o;
+o.x=34;
+ofstream f("bc34.txt");
+strcpy(o.w,"sam");
+f.write((char*)&o,sizeof(struct x));
+}
+f.close()
+}
+void read()
+{
+struct x o1;
+ifstream f("bc34.txt");
+while(!f.eof())
+{
+f.read((char*)&o1,sizeof(struct x));
+cout<<o1.x<<o1.w<<endl;
+}
+f.close();
+}
+};
+

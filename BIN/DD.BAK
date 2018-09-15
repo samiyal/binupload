@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+int main(void)
+{
+struct
+{
+int a;
+int d;
+}x,y;
+x.a=10;
+y=x;
+clrscr();
+printf("%d",y.a);
+getch();
+return 0;
+}

@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+#include<fstream.h>
+#include<string.h>
+struct A
+{
+int x;
+char name[20];
+};
+void main()
+{
+ A O;
+ O.x=34;
+ strcpy(O.name,"ssjahktifffffffffffffffffffffffffffffffffffffffffffffffffffffdddddddddddddddddddddddddddddddddcxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+ cout<<O.x;
+ ofstream f;
+ f.open("sam.bin",ios::binary);
+ int l=sizeof(A);
+ f.write((char*)&O,l);
+ f.close();
+ clrscr();
+ getch();
+}
+
+

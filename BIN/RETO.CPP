@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main(void)
+{
+  int magic;/* magic number   */
+  int guess;
+  magic=rand();
+  printf("guess the magic number:c");
+  scanf("%d",&guess);
+  if(guess==magic)
+  {
+  printf("**right**");
+  printf("%d ids the magic number",magic);
+}
+else if(guess>magic)
+printf("wrong,too high");
+else printf("wrong .too low");
+return 0;
+getch();
+}

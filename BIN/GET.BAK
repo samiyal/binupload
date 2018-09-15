@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+#include<fstream.h>
+int main()
+{
+ofstream myfile;
+myfile.open("newfile.txt");
+myfile<<"\nthis will show up in the file \n";
+myfile.close();
+return 0;
+getch();
+
+
+}

@@ -1,0 +1,26 @@
+# define stacksize  100
+# define integer  1
+# define flt      2
+# define string   3
+#include<stdio.h>
+#include<conio.h>
+struct stackelement
+{
+int etype;
+union
+{
+int ival;
+float fval;
+char *pval;
+}element;
+};
+struct stack
+{
+int top;
+struct stackelement items[stacksize];
+};
+
+
+
+
+

@@ -1,0 +1,47 @@
+#include<iostream.h>
+#include<conio.h>
+class calculator
+{ public:
+   int sum();
+   int multiply();
+
+};
+int sum()
+{
+ int a,b,c;
+ cout<<"enter the value of the a and b"<<endl;
+ cin>>a>>b;
+ cout<<a<<b;
+ c=a+b;
+ cout<<"sum="<<c;
+ return c;
+ }
+int multiply()
+{
+int a,b,c;
+cout<<"enter  the value of the a and b\n";
+cin>>a;
+cin>>b;
+cout<<a<<b;
+c=a*b;
+cout<<"muliply=";
+cout<<c;
+return c;
+int divide()
+{
+int a,b,c;
+cout<<"enter the value of the a and b"<<endl;
+cin>>a>>b;
+c=a/b;
+cout<<"divide\n";
+cout<<c;
+return c;
+}
+void main()
+{
+calculator  i,,c,d,r;
+ .sum;
+getch();
+};
+}
+
